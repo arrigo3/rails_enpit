@@ -1,15 +1,6 @@
 language: ruby
 rvm:
-- 2.2.5
-addons:
-  postgresql: "9.3"
-before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
-  - cp config/database.yml.travis config/database.yml
-deploy:
-  provider: heroku
-  api_key:
-    secure: KKgcfwV0RmQ/uo5dUmD//dJrXnVxFgIjM6JjwyrzguZI+r4cpDBxqTuoPLJPGdZPYXwtnAoUv7zDdA8vuLik3mrUCyaBKVny9EQvLdln+H6dd4idu7pQh4cddlKDUSqDnCatW6atAiqj3FkSqawsq6IKPyf5cxIzr9SVeOeJZha1cb/dgG70i5KVcyaltAOqeePACF38SDdZUN7WHC8V7/qV4swdppPVcAya8dSDXk9u7dQl1GEubpmKjurPRbnt7wWXQco3KZN6ZOslGUhm+WZweN3W8cN7EiOOvK2KwryTRs0KS2Nv+ibVmkiugkDgHy0xBxxuhFh65nCe4MHDUkamuRAH2HTjAc8Z+9MMOQ1my69tuWMmtcPBNXu7v48TvfDxh1mrDeRsbuFgEEJ7mxURzjTjPfjxum082sNrYql4SN3JSXANk3Qwz8hZgtDgIaVKQcvHTPRuAsR8C1AGd/NsE0xGpkDN+EFS8FYVmVZ3FXpVkKCb2IAq4onJE6P7fysj3zYDDmBn8UoZEcL5qS4lGk2mgIiXxwFBQ10/u5HSI7FqArbKC0MvpD782YBTESTpw5+WeRorKBBEnGGk8K9fgjRpW3n2Hxg6QjzSZfRmTLlMspjBI0zkYpf8ln7lSeAohe7PZ6qntHTHbXfSgN2exmKtVUjjVd6+dAENnhA=
-  app: arcane-retreat-95718
-  on:
-    repo: arrigo3/rails_enpit
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
